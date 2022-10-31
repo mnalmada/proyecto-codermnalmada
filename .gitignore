@@ -1,0 +1,9 @@
+# carpeta de node_modules
+
+
+.txtnode_modules/
+
+
+package-lock.json
+
+node_modules/

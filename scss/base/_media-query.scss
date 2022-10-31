@@ -1,0 +1,102 @@
+
+@media screen and (max-width:910px) {
+    .fotos{
+        width: 100%;
+        grid-template-columns: 1fr;
+       
+    }
+}
+
+
+
+@media screen and (max-width:950px) {
+    .grid-servicios {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+    }
+
+    .grid-amarte {
+        grid-column: span 1;
+    }
+
+    .img-7 {
+        grid-column: span 2;
+
+    }
+
+    .img-5 {
+        grid-row: span 2;
+    }
+}
+
+
+
+@media screen and (max-width:450px) {
+
+
+    .grid-servicios {
+        grid-template-columns: 1fr;
+
+    }
+
+  
+}
+
+@media screen and (max-width:769px){
+    .p-3{
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:640px){
+    .promociones1{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+}
+
+@media screen and (max-width:850px){
+    .fotos{
+       display: flex;
+       flex-direction:column;
+    
+        
+    }
+}
+
+@media screen and (max-width:850px){
+    .fotosredux{
+        display: flex;
+        flex-direction: column;
+    
+    }
+}
+
+@media screen and (max-width:850px){
+    header nav ul li{
+        display: flex;
+        justify-content: center
+        ;
+    }
+}
+    
+ @media screen and (max-width:850px){
+    .tarjeta{
+        display: flex;
+        flex-direction: column;    }
+ }
+
+
+ @media screen and (max-width:850px){
+    .pases{
+        align-items: center;
+    }
+ }
+
+
+ @media screen and (max-width:850px){
+    .depih2 {
+        align-items: center;
+    }
+ }
