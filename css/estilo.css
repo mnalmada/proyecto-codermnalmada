@@ -9,7 +9,9 @@ header {
   background-color: #94B49F;
   display: flex;
   justify-content: space-between;
-  font-style: italic; }
+  font-style: italic;
+  
+
   header h1 {
     color: #ECB390;
     font-size: 80px;

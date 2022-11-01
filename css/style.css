@@ -17,9 +17,9 @@ header {
     display: flex;
     justify-content: space-between;
     font-style: italic;
-    align-items: center;
+    /* align-items: center;
     z-index: 1;
-    grid-area: header;
+    grid-area: header; */
 
 }
 
@@ -58,10 +58,6 @@ header nav ul li a {
 
 /*-----------MAIN---------------*/
 
-.pases div {
-    background-color: #CEE5D0;
-}
-
 
 
 .pases h2 {
@@ -83,30 +79,20 @@ header nav ul li a {
 
 .fotos {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-
-
-
 }
 
-.fotos div img {
-    object-fit: cover;
-}
-
-.fotosredux {
+.fotos2{
     display: flex;
+    width: 100%;
     justify-content: center;
-
-
 }
 
-
-
-
-
-
-.depi div {
-    background-color: #FCF8E8;
+.fotos2 img{
+    margin: 30px;
+    width: 350px;
+    height: 350px;
 }
 
 .depih2 h2 {
@@ -115,8 +101,8 @@ header nav ul li a {
     font-weight: 100;
     font-size: 40px;
     text-align: center;
-
 }
+
 
 .depih2 p {
     color: #ECB390;
@@ -124,12 +110,20 @@ header nav ul li a {
     font-size: 20px;
     font-style: italic;
 }
-
-.depi div {
-
+.depi {
+    background-color: #FCF8E8;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
+
+
+.depi img {
+    width: 320px;
+    height: 400px;
+    margin: 20px;
+}
+
 
 .turnos {
     background-color: #FCF8E8;
@@ -141,7 +135,8 @@ header nav ul li a {
     border: black 2px;
     color: black;
     background-color: #CEE5D0;
-    text-decoration: none text-align: center;
+    text-decoration: none;
+    text-align: center;
     font-size: 20px;
     font-style: italic;
 
@@ -164,39 +159,37 @@ header nav ul li a {
 
 .tarjeta {
     background-color: #FCF8E8;
-}
-
-.tarjeta {
     display: flex;
+    justify-content: center;
 }
 
-.tarjeta div {
-    background-color: #FCF8E8;
+.gid1 div {
     display: inline-block;
     text-align-last: center;
     margin: 20px;
-    padding: 0% 0% 2% 0%
+    padding: 0% 0% 2% 0%;
 }
 
 
 
-.tarjeta div img {
+.tarjeta .gid1 img {
     width: 270px;
     height: 270px;
 
 
 }
 
-.tarjeta div h3 {
+.gid1 h3 {
     color: #ECB390;
     margin: 10px;
 }
 
-.tarjeta div a {
-    border: black 2px;
+.gid1 a {
+    border: blac 2px;
     color: black;
     background-color: #CEE5D0;
-    text-decoration: none text-align: center;
+    text-decoration: none;
+    text-align: center;
     font-size: 20px;
     font-style: italic;
 
@@ -210,7 +203,7 @@ header nav ul li a {
     position: fixed;
     right: 0%;
     bottom: 10%;
-    background-color: #CEE5D0;
+    background-color: rgba(206, 229, 208, 0.5);
     font-size: 15px;
     font-style: italic;
     text-align:center;
@@ -224,7 +217,7 @@ header nav ul li a {
     margin-top: 60px;
 }
 
-
+    
 
 
 .visita {
@@ -292,7 +285,8 @@ header nav ul li a {
     margin: 10px;
     transition: 1s;
     color: black;
-    background-color: #ECB390 border-radius: 20px;
+    background-color: #ECB390;
+     border-radius: 20px;
 }
 
 .grid-servicios div a:hover {
@@ -301,7 +295,7 @@ header nav ul li a {
 
 .grid-servicios {
     width: 100%;
-    margin top: 50px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 250px;
@@ -328,8 +322,6 @@ header nav ul li a {
     grid-row: span 2;
 }
 
-
-
 .grid-amarte {
     position: relative;
 }
@@ -352,146 +344,127 @@ header nav ul li a {
     margin: 10px;
 }
 
-.fotoslugar {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-
+.fotoslugar{
+    display:  flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 30px;
 }
 
-.fotoslugar div {
-    border: 1px solid black;
-    width: 350px;
-    height: 400px;
-    transition: 1s;
-
-}
-
-.fotoslugar div:hover {
+.fotoslugar img:hover{
+    transition: 2s;
     transform: scale(1.1);
-
+    cursor: pointer;
 }
 
-.fotoslugar div img {
-    width: 350px;
+.fotoslugar img{
+    width: 300px;
     height: 400px;
-}
-
-.fotoslugar1 {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.fotoslugar1 div {
-    border: 1px solid black;
-    width: 350px;
-    height: 400px;
-    transition: 1s;
-}
-
-.fotoslugar1 div:hover {
-    transform: scale(1.1);
-}
-
-.fotoslugar1 div img {
-    width: 350px;
-    height: 400px;
-
+    border: 2px solid black ;
+    border-radius:10px;
 }
 
 
 
 
-@media screen and (max-width:1200px) {
+
+
+@media screen and (max-width:1250px) {
     header {
-        font-size: 40px;
-    }
-
-    header nav ul li {
-        margin: 10px;
-
-    }
-
-    .fotoslugar div {
-        display: flex;
-        justify-content:space-between;
-        margin: 10px;
-        width: 400px;
-        height: 400px;
-
-    }
-
-    .fotoslugar div img {
-        width: 400px;
-        height: 400px;
-
-    }
-
-    .fotoslugar1 div {
-        margin: 10px;
-        display: flex;
-        justify-content: space-between;
-        width: 400px;
-        height: 400px;
-    }
-
-    .fotoslugar1 div img {
-        width: 400px;
-        height: 400px;
-    }
-}
-
-
-@media screen and (max-width: 985px){
-
-    header {
-        flex-direction: column;
-        width: 100%;
         font-size: 20px;
-      
     }
 
     header nav ul li {
-       
-        margin: 30px;
-        
+        margin: 10px;
 
     }
 
+   
 
 
-    .fotoslugar{
-    
+
+    .tarjeta {
+        flex-direction: column;
+    }
+
+    .gid1{
         display: flex;
-        flex-direction: row;
+        justify-content: space-around;
     }
 
-        .fotoslugar1{
-        display: flex;
-        flex-direction:row;
+}
 
-        }
-        
-    }
+
+
 
 
 
 
         @media screen and (max-width:950px) {
+            header {
+                flex-direction: column;
+                width: 100%;
+                font-size: 20px;
+              
+            }
+        
+            header nav ul li {
+               
+                margin: 30px;
+            }
+        
+        
+        
+            .fotoslugar{
+            
+                display: flex;
+                flex-direction: row;
+            }
+        
+                .fotoslugar1{
+                display: flex;
+                flex-direction:row;
+        
+                }
+                header {
+                    flex-direction: column;
+                    width: 100%;
+                    font-size: 20px;
+                  
+                }
+            
+                header nav ul li {
+                   
+                    margin: 30px;
+                    
+            
+                }
+            
+            
+            
+                .fotoslugar{
+                
+                    display: flex;
+                    flex-direction: row;
+                }
+            
+                    .fotoslugar1{
+                    display: flex;
+                    flex-direction:row;
+            
+                    }
+            .grid-servicios {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 200px;
+            }
+
+
             .fotos {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: 200px;
-                200px;
-                200px;
-
             }
-        }
-
-        @media screen and (max-width:950px) {
-
+            
 
             header nav ul li {
                 margin: 0px;
@@ -501,26 +474,6 @@ header nav ul li a {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: 200px;
-                200px;
-                200px;
-
-            }
-        }
-
-
-        @media screen and (max-width:950px) {
-            .depih2 {
-                padding: 100px;
-                margin: 20px;
-            }
-        }
-
-
-
-        @media screen and (max-width:950px) {
-            .grid-servicios {
-                grid-template-columns: repeat(2, 1fr);
-                grid-auto-rows: 200px;
             }
 
             header h1 {
@@ -543,6 +496,22 @@ header nav ul li a {
 
             .img-5 {
                 grid-row: span 2;
+            }
+
+            main{
+                justify-content: center;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .fotoslugar{
+                flex-direction: column;
+            }
+
+            .fotoslugar img{
+                margin-top: 10px;
+                width: 250px;
+                height: 350px;
             }
         }
 
@@ -589,10 +558,28 @@ header nav ul li a {
                 padding: 100px;
             }
 
+            .fotos{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .fotos2 img{
+                margin: 15px;
+                width: 150px;
+                height: 150px;
+            }
+            
+            .depi img {
+                width: 250px;
+                height: 300px;
+            }
         }
 
-        @media screen and (max-width:550px) {
+        @media screen and (max-width:600px) {
 
+            .pases h2{
+                font-size: 30px;
+            }
 
             header {
                 flex-direction: column;
@@ -613,6 +600,37 @@ header nav ul li a {
                 font-size: 20px;
             }
 
+            .fotos2 img{
+                margin: 5px;
+                width: 100px;
+                height: 100px;
+            }
+
+            .depih2 h2{
+                font-size: 30px;
+            }
+
+            .depih2 p{
+                font-size: 15px;
+            }
+
+            .depi img {
+                width: 150px;
+                height: 200px;
+                margin: 10px;
+            }        
+        .gid1{
+        flex-direction: column;
+        }
+
+        .footer{
+            flex-direction: column;
+        }
+
+        main{
+            flex-direction: column;
+        }
+
         }
 
         @media sreen and (max-width:820px) {
@@ -622,8 +640,20 @@ header nav ul li a {
             }
         }
 
+        .te-asesoramos {
+            background-color: black;
+            padding: 20px;
+        }
 
+        .animate__heartBeat {
+            color: #ECB390;
+            text-align: center;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 50;
+            background: black;
 
+        }
 
 
 
@@ -637,10 +667,13 @@ header nav ul li a {
             background-color: #ECB390 ;
             margin: 20px;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         
-          .footer div h2{
+          .footer  h2{
             display: flex;
             justify-content:center;
             align-items: center;
@@ -661,16 +694,6 @@ header nav ul li a {
         .footer div a{
             margin: 10px;
         }
-
-
-
-        section div img {
-            width: 300px;
-            height: 300px;
-            ;
-        }
-
-
 
         .encuesta {
             background-color: #CEE5D0;
@@ -725,7 +748,8 @@ header nav ul li a {
 
 
         .promo-contenedor {
-            border: solid 4px black margin: 10px;
+            border: solid 4px black;
+            margin: 10px;
             display: grid;
 
 
@@ -739,7 +763,9 @@ header nav ul li a {
 
 
         .promo-fotos {
-            border: solid 2px black background-color #94B49F font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border: solid 2px black;
+             background-color: #94B49F;
+              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             font-size: 30px;
             text-align: center;
 
@@ -750,20 +776,7 @@ header nav ul li a {
 
 
 
-        .te-asesoramos {
-            background-color: black;
-            padding: 20px;
-        }
-
-        .te-asesoramos h2 {
-            color: #ECB390;
-            text-align: center;
-            font-size: 20px;
-            font-style: italic;
-            font-weight: 50;
-            background: black;
-
-        }
+       
 
         .col-lg-4 img {
             width: 350px;
@@ -809,11 +822,13 @@ header nav ul li a {
         }
 
 
-        .container-fluid div img {
+        .container-fluid  div img {
             width: 300px;
             height: 400px;
             justify-content: end;
         }
+
+    
 
         .tecontacto {
             margin: 10px;

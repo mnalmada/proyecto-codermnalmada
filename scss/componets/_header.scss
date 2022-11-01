@@ -6,8 +6,10 @@ header {
     display: flex;
     justify-content:space-between;
     font-style: italic;
-
-    .header {}
+    align-items: center;
+    z-index: 1;
+    grid-area: header;
+    
     h1 {
         color: #ECB390;
         font-size: 80px;
@@ -15,6 +17,8 @@ header {
         font-weight: 300;
         text-align: end
     }
+
+
     nav {
         ul {
             list-style: none;
